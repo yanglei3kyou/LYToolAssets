@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D36EC0F1D0E8549004CAD1A /* libLYToolAssets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D36EC0E1D0E8549004CAD1A /* libLYToolAssets.a */; };
+		6D36EC741D0E9D03004CAD1A /* libLYToolAssets_1_0_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D36EC731D0E9D03004CAD1A /* libLYToolAssets_1_0_3.a */; };
 		6DDB71C51D0D3E2900972587 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB71C41D0D3E2900972587 /* main.m */; };
 		6DDB71C81D0D3E2900972587 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB71C71D0D3E2900972587 /* AppDelegate.m */; };
 		6DDB71CB1D0D3E2900972587 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB71CA1D0D3E2900972587 /* ViewController.m */; };
@@ -17,18 +17,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D36EC031D0E8549004CAD1A /* LYConstantAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYConstantAssets.h; sourceTree = "<group>"; };
-		6D36EC041D0E8549004CAD1A /* LYMacrosHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMacrosHeaders.h; sourceTree = "<group>"; };
-		6D36EC051D0E8549004CAD1A /* LYToolAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYToolAssets.h; sourceTree = "<group>"; };
-		6D36EC061D0E8549004CAD1A /* LYVisibleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleButton.h; sourceTree = "<group>"; };
-		6D36EC071D0E8549004CAD1A /* LYVisibleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleImageView.h; sourceTree = "<group>"; };
-		6D36EC081D0E8549004CAD1A /* LYVisibleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleLabel.h; sourceTree = "<group>"; };
-		6D36EC091D0E8549004CAD1A /* LYVisibleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleView.h; sourceTree = "<group>"; };
-		6D36EC0A1D0E8549004CAD1A /* NSArray+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LYAssets.h"; sourceTree = "<group>"; };
-		6D36EC0B1D0E8549004CAD1A /* NSIndexPath+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+LYAssets.h"; sourceTree = "<group>"; };
-		6D36EC0C1D0E8549004CAD1A /* NSString+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYAssets.h"; sourceTree = "<group>"; };
-		6D36EC0D1D0E8549004CAD1A /* UIViewController+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYAssets.h"; sourceTree = "<group>"; };
-		6D36EC0E1D0E8549004CAD1A /* libLYToolAssets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLYToolAssets.a; sourceTree = "<group>"; };
+		6D36EC681D0E9D03004CAD1A /* LYConstantAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYConstantAssets.h; sourceTree = "<group>"; };
+		6D36EC691D0E9D03004CAD1A /* LYMacrosHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMacrosHeaders.h; sourceTree = "<group>"; };
+		6D36EC6A1D0E9D03004CAD1A /* LYToolAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYToolAssets.h; sourceTree = "<group>"; };
+		6D36EC6B1D0E9D03004CAD1A /* LYVisibleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleButton.h; sourceTree = "<group>"; };
+		6D36EC6C1D0E9D03004CAD1A /* LYVisibleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleImageView.h; sourceTree = "<group>"; };
+		6D36EC6D1D0E9D03004CAD1A /* LYVisibleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleLabel.h; sourceTree = "<group>"; };
+		6D36EC6E1D0E9D03004CAD1A /* LYVisibleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYVisibleView.h; sourceTree = "<group>"; };
+		6D36EC6F1D0E9D03004CAD1A /* NSArray+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LYAssets.h"; sourceTree = "<group>"; };
+		6D36EC701D0E9D03004CAD1A /* NSIndexPath+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+LYAssets.h"; sourceTree = "<group>"; };
+		6D36EC711D0E9D03004CAD1A /* NSString+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYAssets.h"; sourceTree = "<group>"; };
+		6D36EC721D0E9D03004CAD1A /* UIViewController+LYAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYAssets.h"; sourceTree = "<group>"; };
+		6D36EC731D0E9D03004CAD1A /* libLYToolAssets_1_0_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLYToolAssets_1_0_3.a; sourceTree = "<group>"; };
 		6DDB71C01D0D3E2900972587 /* LYToolAssetsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYToolAssetsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDB71C41D0D3E2900972587 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DDB71C61D0D3E2900972587 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,44 +46,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D36EC0F1D0E8549004CAD1A /* libLYToolAssets.a in Frameworks */,
+				6D36EC741D0E9D03004CAD1A /* libLYToolAssets_1_0_3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D36EC001D0E8549004CAD1A /* LYToolAssets */ = {
+		6D36EC651D0E9D03004CAD1A /* LYToolAssets */ = {
 			isa = PBXGroup;
 			children = (
-				6D36EC011D0E8549004CAD1A /* include */,
-				6D36EC0E1D0E8549004CAD1A /* libLYToolAssets.a */,
+				6D36EC661D0E9D03004CAD1A /* include */,
+				6D36EC731D0E9D03004CAD1A /* libLYToolAssets_1_0_3.a */,
 			);
 			path = LYToolAssets;
 			sourceTree = "<group>";
 		};
-		6D36EC011D0E8549004CAD1A /* include */ = {
+		6D36EC661D0E9D03004CAD1A /* include */ = {
 			isa = PBXGroup;
 			children = (
-				6D36EC021D0E8549004CAD1A /* LYToolAssets */,
+				6D36EC671D0E9D03004CAD1A /* LYToolAssets */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		6D36EC021D0E8549004CAD1A /* LYToolAssets */ = {
+		6D36EC671D0E9D03004CAD1A /* LYToolAssets */ = {
 			isa = PBXGroup;
 			children = (
-				6D36EC031D0E8549004CAD1A /* LYConstantAssets.h */,
-				6D36EC041D0E8549004CAD1A /* LYMacrosHeaders.h */,
-				6D36EC051D0E8549004CAD1A /* LYToolAssets.h */,
-				6D36EC061D0E8549004CAD1A /* LYVisibleButton.h */,
-				6D36EC071D0E8549004CAD1A /* LYVisibleImageView.h */,
-				6D36EC081D0E8549004CAD1A /* LYVisibleLabel.h */,
-				6D36EC091D0E8549004CAD1A /* LYVisibleView.h */,
-				6D36EC0A1D0E8549004CAD1A /* NSArray+LYAssets.h */,
-				6D36EC0B1D0E8549004CAD1A /* NSIndexPath+LYAssets.h */,
-				6D36EC0C1D0E8549004CAD1A /* NSString+LYAssets.h */,
-				6D36EC0D1D0E8549004CAD1A /* UIViewController+LYAssets.h */,
+				6D36EC681D0E9D03004CAD1A /* LYConstantAssets.h */,
+				6D36EC691D0E9D03004CAD1A /* LYMacrosHeaders.h */,
+				6D36EC6A1D0E9D03004CAD1A /* LYToolAssets.h */,
+				6D36EC6B1D0E9D03004CAD1A /* LYVisibleButton.h */,
+				6D36EC6C1D0E9D03004CAD1A /* LYVisibleImageView.h */,
+				6D36EC6D1D0E9D03004CAD1A /* LYVisibleLabel.h */,
+				6D36EC6E1D0E9D03004CAD1A /* LYVisibleView.h */,
+				6D36EC6F1D0E9D03004CAD1A /* NSArray+LYAssets.h */,
+				6D36EC701D0E9D03004CAD1A /* NSIndexPath+LYAssets.h */,
+				6D36EC711D0E9D03004CAD1A /* NSString+LYAssets.h */,
+				6D36EC721D0E9D03004CAD1A /* UIViewController+LYAssets.h */,
 			);
 			path = LYToolAssets;
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 		6DDB71C21D0D3E2900972587 /* LYToolAssetsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6D36EC001D0E8549004CAD1A /* LYToolAssets */,
+				6D36EC651D0E9D03004CAD1A /* LYToolAssets */,
 				6DDB71C61D0D3E2900972587 /* AppDelegate.h */,
 				6DDB71C71D0D3E2900972587 /* AppDelegate.m */,
 				6DDB71C91D0D3E2900972587 /* ViewController.h */,
