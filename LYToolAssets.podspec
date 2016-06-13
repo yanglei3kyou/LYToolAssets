@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LYToolAssets"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "LYToolAssets is asset of Tools."
 
   # This description is used to generate tags and improve search results.
@@ -35,10 +35,10 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/yanglei3kyou/LYToolAssets.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/yanglei3kyou/LYToolAssets.git", :tag => "1.0.1" }
 
 
-  s.source_files  = "LYToolAssets", "LYToolAssets/**/*.{h,m}"
+  s.source_files  = "LYToolAssets", "LYToolAssets/**/*"
   s.public_header_files = "LYToolAssets/**/*.h"
 
   s.requires_arc = true
