@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface NSIndexPath (LYAssets)
-- (BOOL)ly_isSameTo:(NSIndexPath *)indexPatch;
+/**
+ *  判断两indexPath是否相等
+ *
+ *  @param indexPath 待比较indexPath
+ *
+ *  @return 比较结果
+ */
+- (BOOL)ly_isSameTo:(NSIndexPath *)indexPath;
 
 @end

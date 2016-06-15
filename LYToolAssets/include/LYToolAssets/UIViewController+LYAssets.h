@@ -15,14 +15,44 @@ typedef void(^LYNavigationItemCallBack)();
 @property (nonatomic, copy, nullable) LYNavigationItemCallBack ly_leftCallBack;
 @property (nonatomic, copy, nullable) LYNavigationItemCallBack ly_rightCallBack;
 
+/**
+ *  设置NavigationBar Title
+ *
+ *  @param titleString Title字符串
+ */
 - (void)ly_configNavigationBarDisplayTitle:(nonnull NSString *)titleString;
 
+/**
+ *  设置导航栏左侧按钮相关信息
+ *
+ *  @param titleString 左侧按钮标题
+ *  @param callBack    事件回调
+ */
 - (void)ly_configLeftNavigationItemWithTitle:(nonnull NSString *)titleString withCallBack:(nullable LYNavigationItemCallBack)callBack;
+
+/**
+ *  设置导航栏左侧按钮相关信息
+ *
+ *  @param imageString 左侧按钮图片名称
+ *  @param callBack    事件回调
+ */
 - (void)ly_configLeftNavigationItemWithImageString:(nonnull NSString *)imageString withCallBack:(nullable LYNavigationItemCallBack)callBack;
 
+/**
+ *  设置导航栏右侧按钮相关信息
+ *
+ *  @param titleString 右侧按钮标题
+ *  @param callBack    事件回调
+ */
 - (void)ly_configRightNavigationItemWithTitle:(nonnull NSString *)titleString withCallBack:(nullable LYNavigationItemCallBack)callBack;
-- (void)ly_configRightNavigationItemWithImageString:(nonnull NSString *)imageString withCallBack:(nullable LYNavigationItemCallBack)callBack;
 
+/**
+ *  设置导航栏右侧按钮相关信息
+ *
+ *  @param imageString 右侧按钮图片名称
+ *  @param callBack    事件回调
+ */
+- (void)ly_configRightNavigationItemWithImageString:(nonnull NSString *)imageString withCallBack:(nullable LYNavigationItemCallBack)callBack;
 
 /**
  *  push新的控制器到导航控制器
