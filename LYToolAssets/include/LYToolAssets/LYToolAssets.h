@@ -28,4 +28,7 @@
 /* 可视化编辑图片视图 */
 #import "LYVisibleImageView.h"
 
+/* 已封装导航控制器 */
+#import "LYNavigationController.h"
+
 #endif /* LYToolAssets_h */
