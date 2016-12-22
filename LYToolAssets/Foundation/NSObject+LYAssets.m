@@ -82,8 +82,6 @@
 
 /**
  *  删除本对象在路径key中存储的值
- *
- *  @param key 对应路径
  */
 - (void)ly_removeAllAssociatedObjects {
     objc_removeAssociatedObjects(self);

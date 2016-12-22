@@ -34,9 +34,41 @@
 }
 
 
-- (void)ly_configNavigationBarDisplayTitle:(nonnull NSString *)titleString {
+- (void)ly_configNavigationBarDisplayTitle:(nonnull NSString *)titleString titleColor:(nullable UIColor *)titleColor titleFont:(nullable UIFont *)titleFont {
     if (self.navigationController && self.navigationItem) {
+        
         self.navigationItem.title = titleString;
+        if (titleColor && titleFont) {
+            [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:titleColor,NSFontAttributeName:titleFont}];
+        }
+        else if (titleFont) {
+            [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:titleFont}];
+        }
+        else if (titleColor){
+            [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:titleColor}];
+        }
+        
+    }
+}
+
+- (void)ly_configNavigationBarDisplayTitle:(nonnull NSString *)titleString titleColor:(nullable UIColor *)titleColor titleFont:(nullable UIFont *)titleFont topOffset:(CGFloat)offset {
+    if (self.navigationController && self.navigationItem) {
+        
+        // 将导航栏 Title 向下方调整 offset
+        [self.navigationController .navigationBar setTitleVerticalPositionAdjustment:offset forBarMetrics:UIBarMetricsDefault];
+        
+        
+        self.navigationItem.title = titleString;
+        if (titleColor && titleFont) {
+            [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:titleColor,NSFontAttributeName:titleFont}];
+        }
+        else if (titleFont) {
+            [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:titleFont}];
+        }
+        else if (titleColor){
+            [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:titleColor}];
+        }
+        
     }
 }
 
@@ -50,15 +82,41 @@
 
 - (void)ly_configLeftNavigationItemWithImageString:(nonnull NSString *)imageString withCallBack:(nullable LYNavigationItemCallBack)callBack {
     if (self.navigationController) {
-        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
+        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 51, 23.5)];
         [button setImage:[UIImage imageNamed:imageString] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(leftItemClicked:) forControlEvents:UIControlEventTouchUpInside];
+        button.imageView.contentMode = UIViewContentModeScaleAspectFit;
         UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:button];
         self.navigationItem.leftBarButtonItem = leftItem;
         self.ly_leftCallBack = callBack;
         
     }
 }
+
+- (void)ly_configLeftNavigationItemWithCustomView:(nonnull UIView *)customView bounds:(CGRect)bounds toLeft:(CGFloat)toLeft withCallBack:(nullable LYNavigationItemCallBack)callBack {
+    if (self.navigationController) {
+        
+        UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(leftItemClicked:)];
+        [customView addGestureRecognizer:tapGes];
+        customView.frame = bounds;
+        
+        
+        UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil ];
+        negativeSpacer.width = toLeft+5-20 ;//这个数值可以根据情况自由变化
+        
+        UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:customView];
+
+        if (toLeft != 0) {
+            self.navigationItem.leftBarButtonItems = @[negativeSpacer,leftItem];
+        } else {
+            self.navigationItem.leftBarButtonItem = leftItem;
+        }
+
+        self.ly_leftCallBack = callBack;
+    }
+}
+
+
 
 - (void)leftItemClicked:(id)sender {
     if (self.ly_leftCallBack) {
@@ -97,7 +155,7 @@
 /**
  *  push新的控制器到导航控制器
  *
- *  @param newViewController 目标新的视图控制器
+ *  @param viewController 目标新的视图控制器
  */
 - (void)ly_pushViewController:(nonnull UIViewController *)viewController {
     if (self.navigationController && viewController) {
@@ -111,12 +169,14 @@
 /**
  *  push新的控制器到导航控制器
  *
- *  @param newViewController 目标新的视图控制器
+ *  @param viewController 目标新的视图控制器
  *  @param isHidden 是否隐藏tabbar
  */
 - (void)ly_pushViewController:(nonnull UIViewController *)viewController hiddenTabBar:(BOOL)isHidden {
     if (self.navigationController && viewController) {
         viewController.hidesBottomBarWhenPushed = isHidden;
+        UIBarButtonItem *backBarItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+        [self.navigationItem setBackBarButtonItem:backBarItem];
         [self.navigationController pushViewController:viewController animated:YES];
     } else {
         NSLog(@"%s 当前 ViewController || NavigationController 为空",__func__);

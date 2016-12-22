@@ -56,7 +56,7 @@
  *  设置Key - Value UnsignedInteger
  *
  *  @param aUInteger   UnsignedInteger
- *  @param key key
+ *  @param aKey key
  */
 - (void)ly_setUnsignedInteger:(NSUInteger)aUInteger forKey:(NSString *)aKey;
 

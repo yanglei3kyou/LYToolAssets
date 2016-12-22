@@ -19,8 +19,21 @@ typedef void(^LYNavigationItemCallBack)();
  *  设置NavigationBar Title
  *
  *  @param titleString Title字符串
+ *  @param titleColor Title字符颜色
+ *  @param titleFont Title字符大小
  */
-- (void)ly_configNavigationBarDisplayTitle:(nonnull NSString *)titleString;
+- (void)ly_configNavigationBarDisplayTitle:(nonnull NSString *)titleString titleColor:(nullable UIColor *)titleColor titleFont:(nullable UIFont *)titleFont;
+
+
+/**
+ 设置NavigationBar Title
+
+ @param titleString Title字符串
+ @param titleColor Title字符颜色
+ @param titleFont Title字符大小
+ @param offset 标题上下偏移
+ */
+- (void)ly_configNavigationBarDisplayTitle:(nonnull NSString *)titleString titleColor:(nullable UIColor *)titleColor titleFont:(nullable UIFont *)titleFont topOffset:(CGFloat)offset;
 
 /**
  *  设置导航栏左侧按钮相关信息
@@ -37,6 +50,8 @@ typedef void(^LYNavigationItemCallBack)();
  *  @param callBack    事件回调
  */
 - (void)ly_configLeftNavigationItemWithImageString:(nonnull NSString *)imageString withCallBack:(nullable LYNavigationItemCallBack)callBack;
+
+- (void)ly_configLeftNavigationItemWithCustomView:(nonnull UIView *)customView bounds:(CGRect)bounds toLeft:(CGFloat)toLeft withCallBack:(nullable LYNavigationItemCallBack)callBack;
 
 /**
  *  设置导航栏右侧按钮相关信息

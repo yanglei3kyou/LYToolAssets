@@ -36,6 +36,10 @@
 /*  --- UIKit ---  */
 /* 视图控制器附加类目 */
 #import "UIViewController+LYAssets.h"
+/* 导航视图控制器附加类目 */
+#import "UINavigationController+LYAssets.h"
+/* 颜色附加类目 */
+#import "UIColor+LYAssets.h"
 /* 可视化编辑视图 */
 #import "LYVisibleView.h"
 /* 可视化编辑标签 */
@@ -43,6 +47,7 @@
 /* 可视化编辑按钮 */
 #import "LYVisibleButton.h"
 /* 可视化编辑图片视图 */
+#import "UIImage+LYAssets.h"
 #import "LYVisibleImageView.h"
 /* 已封装导航控制器 */
 #import "LYNavigationController.h"
